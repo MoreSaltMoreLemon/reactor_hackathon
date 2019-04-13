@@ -1,38 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { lead } from './lead'
+import LoanOffer from './components/LoanOffer'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {}
+  }
 
   componentDidMount() {
-    httpRequest('https://api.evenfinancial.com/leads/rateTables', 'post', lead)
+    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead})
       .then(r => r.json())
       .then(j => {
-        console.log(j)
-        const leadUuid = j.leadUuid
-        httpRequest(`https://api.evenfinancial.com/originator/rateTables/${leadUuid}`, 'get')
-        .then(console.log)
+        const uuid = j.uuid
+        httpRequest('http://localhost:3000/api/v1/ratetables', 'post', {uuid})
+          .then(r => r.json())
+          .then(j => { 
+            console.log("RATETABLES:", j)
+            this.setState({ lead: j })
+          })
       })
   }
 
-
+  renderLoanOffers = () => {
+    if (this.state.lead) {
+      return this.state.lead.loanOffers.map(offer => {
+        return <LoanOffer offer={offer} />
+      })
+    } else {
+      return null
+    }
+  }
 
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          {this.renderLoanOffers()}
         </header>
       </div>
     );
@@ -41,100 +48,12 @@ class App extends Component {
 
 export default App;
 
-const lead = {
-  "productTypes": [
-    "loan", 
-    "savings"
-  ], 
-  "personalInformation": {
-    "firstName": "John", 
-    "lastName": "Doe", 
-    "email": "john@example.com", 
-    "city": "New York", 
-    "state": "NY", 
-    "workPhone": "2125551234", 
-    "primaryPhone": "2125556789", 
-    "address1": "45 West 21st Street", 
-    "address2": "5th Floor", 
-    "zipcode": "10010", 
-    "monthsAtAddress": 5, 
-    "driversLicenseNumber": "111222333", 
-    "driversLicenseState": "NY", 
-    "ipAddress": "8.8.8.8", 
-    "activeMilitary": false, 
-    "militaryVeteran": true, 
-    "dateOfBirth": "1993-10-09", 
-    "educationLevel": "bachelors", 
-    "ssn": "111-22-3333"
-  }, 
-  "loanInformation": {
-    "purpose": "home_refi", 
-    "loanAmount": 10000
-  }, 
-  "mortgageInformation": {
-    "propertyType": "condo", 
-    "propertyStatus": "own_with_mortgage", 
-    "propertyValue": 200000, 
-    "mortgageBalance": 10000, 
-    "lenderName": "Bank OF NY", 
-    "hasFHALoan": true, 
-    "currentWithLoan": true
-  }, 
-  "creditCardInformation": {
-    "allowAnnualFee": true, 
-    "cardBenefits": [
-      "travel_incentives"
-    ]
-  }, 
-  "creditInformation": {
-    "providedCreditRating": "excellent", 
-    "providedNumericCreditScore": 750
-  }, 
-  "financialInformation": {
-    "employmentStatus": "employed", 
-    "employmentPayFrequency": "weekly", 
-    "annualIncome": 120000, 
-    "monthlyNetIncome": 10000, 
-    "bankName": "Santander", 
-    "bankRoutingNumber": "231372691", 
-    "bankAccountType": "savings", 
-    "monthsAtBank": 10, 
-    "bankAccountNumber": "1234567890"
-  }, 
-  "employmentInformation": {
-    "employerName": "EVEN Financial", 
-    "employerAddress": "45 W 21st St", 
-    "employerCity": "New York", 
-    "employerState": "NY", 
-    "employerZip": "10010", 
-    "jobTitle": "Software Engineer", 
-    "monthsEmployed": 14, 
-    "directDeposit": true, 
-    "payDate1": "2004-10-06", 
-    "payDate2": "2004-11-06"
-  }, 
-  "legalInformation": {
-    "consentsToFcra": true, 
-    "consentsToTcpa": true, 
-    "tcpaLanguage": "I agree to be contacted by Even Financial and its partners at the telephone number(s) I have provided above to explore personal loan offers, including contact through automatic dialing systems, artificial or pre-recorded voice messaging, or text message. I understand my consent is not required as a condition to purchasing any goods or services from anyone."
-  }, 
-  "clientTags": {
-    "hello": [
-      "world", 
-      "there"
-    ], 
-    "something": [
-      "else"
-    ]
-  }
-}
-
 function httpRequest(url, method='GET', data={}) {
   const init = {
     headers: {
       'Accept': 'application/vnd.evenfinancial.v1+json',
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer e7675dd3-ff3b-434b-95aa-70251cc3784b_88140dd4-f13e-4ce3-8322-6eaf2ee9a2d2'
+      'Content-Type': 'application/json'
+      // 'Authorization': 'Bearer e7675dd3-ff3b-434b-95aa-70251cc3784b_88140dd4-f13e-4ce3-8322-6eaf2ee9a2d2'
     },
     method: method,
     body: JSON.stringify(data)
