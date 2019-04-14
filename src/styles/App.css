@@ -32,3 +32,12 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.container {
+  color: black;
+}
+
+.container ul {
+  color: black;
+  list-style: none;
+}
