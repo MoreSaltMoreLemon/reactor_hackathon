@@ -66,6 +66,7 @@ export default class LoanApplication extends Component {
   }
 
   render() {
+
     return (
         <div className="loan-application">
           <form
@@ -73,6 +74,7 @@ export default class LoanApplication extends Component {
             <Fade up>
               <input
                 type="text"
+                id="firstNameInput"
                 placeholder="First Name"
                 required
                 name="firstName"

@@ -17,6 +17,13 @@
   outline: none;
 }
 
+label{
+  position: fixed;
+  color: rgba(0,0,0,.3);
+  text-align: right;
+  margin: 100px;
+}
+
 .btn {
   background-color: rgb(114 169 238);
   font-size: 1.1rem;
@@ -28,10 +35,7 @@
 .btn:hover{
   transform: scale(2.1);
   box-shadow: 2px 2px rgba(125,125, 125, 1);
-
 }
-
-
 
 
 .firstName {
