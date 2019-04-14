@@ -30,26 +30,17 @@ export default class LoanOffer extends Component {
     }
   }
 
-  setLoanOffers = () => {
-    return this.props.offers.map(offer => {
-        this.setState({offerInformation: offer})
-      })
-    }
-  }
-
-
-
   render() {
-
+    const innerHtml = { __html: this.props.offer.originator.description }
     return (
       <div className="loan-offer">
         LOAN OFFER
-        <h3>Score: {this.state.recommendationScore}</h3>
-        <p>Only {this.state.termLength} {this.state.termUnit}s</p>
-        <p>Loans between {this.state.maxAmount} and {this.state.minAmount}</p>
-        <p>With a mean APR of {this.state.meanApr}!</p>
-        <p>And an average monthly payment of {this.state.meanMonthlyPayment}</p>
-
+        <h3>Score: {Math.floor(Math.random() * 100)}</h3>
+        <p>Only {this.props.offer.termLength} {this.props.offer.termUnit}s</p>
+        <p>Loans between {this.props.offer.maxAmount} and {this.props.offer.minAmount}</p>
+        <p>With a mean APR of {this.props.offer.meanApr}%!</p>
+        <p>And an average monthly payment of {this.props.offer.meanMonthlyPayment}</p>
+        <p dangerouslySetInnerHTML={innerHtml}></p>
 
 
       </div>

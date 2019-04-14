@@ -31,8 +31,8 @@ export default class LoanApplication extends Component {
         "ssn": "111-22-3333"
       },
       "financialInformation": {
-        "employmentStatus": "",
-        "employmentPayFrequency": "",
+        "employmentStatus": "employed",
+        "employmentPayFrequency": "weekly",
         "annualIncome": 120000,
         "monthlyNetIncome": 10000
       }
@@ -153,7 +153,8 @@ export default class LoanApplication extends Component {
             <select
               name='employmentStatus'
               onChange={this.changeFinancial}
-              className= "application employed">
+              className= "application employed"
+              value={this.state.financialInformation.employmentStatus}>
               <option value ='' selected disabled> Are you employed</option>
               <option value='employed'>Employed</option>
               <option value='unemployed'>Unemployed</option>
@@ -162,7 +163,8 @@ export default class LoanApplication extends Component {
           <Fade up>
             <select
               name="employmentPayFrequency" onChange={this.changeFinancial}
-              className= "application paymentFrequency">
+              className= "application paymentFrequency"
+              value={this.state.financialInformation.employmentPayFrequency}>
               <option value='' selected disabled> What is your payment frequency</option>
               <option value="weekly"> Weekly</option>
               <option value="fortnightly"> Fortnightly</option>

@@ -43,9 +43,9 @@ class App extends Component {
 
   passLoanOffers = () => {
     if (this.state.lead) {
-        return <LoanOffer offers={this.state.lead.loanOffers} />
+      return this.state.lead.loanOffers.map(offer => <LoanOffer offer={offer} />)
     } else {
-      return null
+      return <LoanApplication passApplicationInfo={this.passApplicationInfo} />
     }
   }
 
@@ -55,12 +55,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
            {this.passLoanOffers()} 
-          <LoanOffer />
-          {/* {this.renderLoanOffers()} */}
-          <LoanApplication
-            passApplicationInfo={this.passApplicationInfo}
-            passFinancialApplicationInfo={this.passFinancialApplicationInfo}
-            />
         </header>
       </div>
     );
