@@ -18,21 +18,19 @@ class App extends Component {
     }
   }
 
-  passPersonalApplicationInfo = (applicationDetails) => {
-    this.setState({personalInformation: applicationDetails})
+   passApplicationInfo = (applicationDetails) => {
+    this.setState({
+      personalInformation: applicationDetails.personalInformation,
+      financialInformation: applicationDetails.financialInformation
+    })
 
-
-  passFinancialApplicationInfo = (applicationDetails) => {
-    this.setState({personalInformation: applicationDetails})
-
-  
     httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: applicationDetails})
       .then(r => r.json())
       .then(j => {
         const uuid = j.uuid
         httpRequest('http://localhost:3000/api/v1/ratetables', 'post', {uuid})
           .then(r => r.json())
-          .then(j => { 
+          .then(j => {
             console.log("RATETABLES:", JSON.stringify(j))
 
             this.setState({ lead: j })
@@ -65,6 +63,7 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
 

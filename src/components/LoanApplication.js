@@ -31,8 +31,8 @@ export default class LoanApplication extends Component {
         "ssn": "111-22-3333"
       },
       "financialInformation": {
-        "employmentStatus": "employed",
-        "employmentPayFrequency": "weekly",
+        "employmentStatus": "",
+        "employmentPayFrequency": "",
         "annualIncome": 120000,
         "monthlyNetIncome": 10000
       }
@@ -41,24 +41,24 @@ export default class LoanApplication extends Component {
 
   changePersonal = (e) => {
     this.setState({
-      personalInformation[e.target.name]: e.target.value
+      personalInformation: {...this.state.personalInformation, [e.target.name]: e.target.value }
     })
   }
 
   changeFinancial = (e) => {
     this.setState({
-      financialInformation[e.target.name]: e.target.value
+      financialInformation: { ...this.state.financialInformation,[e.target.name]: e.target.value}
     })
   }
 
   submitPersonalHandler = (e) => {
     e.preventDefault();
-    this.props.passPersonalApplicationInfo(this.state.personalInformation)
+    this.props.passApplicationInfo(this.state)
   }
-  submitFinancialHandler = (e) => {
-    e.preventDefault();
-    this.props.passFinancialApplicationInfo(this.state.financialInformation)
-  }
+  // submitFinancialHandler = (e) => {
+  //   e.preventDefault();
+  //   this.props.passFinancialApplicationInfo(this.state.financialInformation)
+  // }
 
   submitFinancialInfoForm
 
@@ -68,21 +68,24 @@ export default class LoanApplication extends Component {
       <div className="loan-application">
         <form
           onSubmit={this.submitPersonalHandler}>
+          <Fade up>
           <input
             type="text"
             placeholder="First Name"
             name="firstName"
             className="application firstName"
-            value={this.state.firstName}
+            value={this.state.personalInformation.firstName}
             onChange={this.changePersonal}
           ></input>
+        </Fade>
 
+      <Fade up>
           <input
             type="text"
             name="lastName"
             className="application lastName"
             placeholder="Last Name"
-            value={this.state.lastName}
+            value={this.state.personalInformation.lastName}
             onChange={this.changePersonal}
           ></input>
 
@@ -94,7 +97,7 @@ export default class LoanApplication extends Component {
             name="email"
             className="application email"
             placeholder="E-Mail"
-            value={this.state.email}
+            value={this.state.personalInformation.email}
             onChange={this.changePersonal}
           ></input>
 
@@ -106,92 +109,95 @@ export default class LoanApplication extends Component {
             name="city"
             className="application city"
             placeholder="city"
-            value={this.state.city}
+            value={this.state.personalInformation.city}
             onChange={this.changePersonal}
           ></input>
 
         </Fade>
         <Fade up>
-
           <input
             type="text"
             name="state"
             className="application state"
             placeholder="state"
-            value={this.state.state}
+            value={this.state.personalInformation.state}
             onChange={this.changePersonal}
           ></input>
 
         </Fade>
         <Fade up>
-
           <input
             type="tel"
             name="primaryPhone"
             className="application primaryPhone"
             placeholder="primaryPhone"
-            value={this.state.primaryPhone}
+            value={this.state.personalInformation.primaryPhone}
             onChange={this.changePersonal}
           ></input>
 
         </Fade>
         <Fade up>
-
           <input
             type="text"
             name="dateOfBirth"
             className="application dateOfBirth"
             placeholder="dateOfBirth"
-            value={this.state.dateOfBirth}
+            value={this.state.personalInformation.dateOfBirth}
             onChange={this.changePersonal}
           ></input>
         </Fade>
-        <Fade up>
-          <input
-            className="application-submit" 
-            type="submit"
-            value="submit"
-          ></input>
-        </Fade>
+
+      {/*financial info*/}
+          <Fade up>
+            <select
+              onChange={this.changeFinancial}
+              className= "application employed">
+              <option value ='' selected disabled> Are you employed</option>
+              <option value='employed'>Employed</option>
+              <option value='unemployed'>Unemployed</option>
+            </select>
+          </Fade>
+          <Fade up>
+            <select
+              name="employmentFrequency" onChange={this.changeFinancial}
+              className= "application paymentFrequency">
+              <option value='' selected disabled> What is your payment frequency</option>
+              <option value="weekly"> Weekly</option>
+              <option value="fortnightly"> Fortnightly</option>
+              <option value="monthly"> Monthly</option>
+            </select>
+          </Fade>
+          <Fade up>
+            <input
+              type="text"
+              name="annualIncome"
+              className="application annualIncome"
+              placeholder="annualIncome"
+              value={this.state.financialInformation.annualIncome}
+              onChange={this.changeFinancial}
+            ></input>
+          </Fade>
+          <Fade up>
+            <input
+              type="text"
+              name="monthlyNetIncome"
+              className="application monthlyNetIncome"
+              placeholder="monthlyNetIncome"
+              value={this.state.financialInformation.monthlyNetIncome}
+              onChange={this.changeFinancial}
+            ></input>
+          </Fade>
+          <Fade up>
+            <input
+              className="financial-submit"
+              type="submit"
+              value="submit"
+            ></input>
+          </Fade>
 
         </form>
-        //financial info form
-        <form
-          onSubmit={this.submitFinancialHandler}
-          className='financial-info-form'>
-          // needs to become a checkbox
-          <select
-            onChange={this.changeFinancial}>
-            <option value='employed'>Employed</option>
-            <option value='unemployed'>Unemployed</option>
-          </select>
-          <select
-            name="employmentFrequency" onChange={this.changeFinancial}>
-            <option value="weekly"> Weekly</option>
-            <option value="fortnightly"> Fortnightly</option>
-            <option value="monthly"> Monthly</option>
-          </select>
-          <input
-            type="text"
-            name="annualIncome"
-            className="application annualIncome"
-            placeholder="annualIncome"
-            value={this.state.annualIncome}
-            onChange={this.changeFinancial}
-          ></input>
-          <input
-            type="text"
-            name="monthlyNetIncome"
-            className="application monthlyNetIncome"
-            placeholder="monthlyNetIncome"
-            value={this.state.monthlyNetIncome}
-            onChange={this.changeFinancial}
-          ></input>
-        </form>
-        
+
       </div>
-      </form>
-    </div>
     )
   }
 }
