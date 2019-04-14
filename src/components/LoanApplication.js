@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import '../styles/LoanApplication.css';
-
+import Fade from 'react-reveal/Fade'
+import { Mountain } from '../data/parallaxes'
+import Parallax from './Parallax'
 
 export default class LoanApplication extends Component {
   constructor(props) {
@@ -34,7 +36,6 @@ export default class LoanApplication extends Component {
         "annualIncome": 120000,
         "monthlyNetIncome": 10000
       }
-
     }
   }
 
@@ -63,6 +64,7 @@ export default class LoanApplication extends Component {
 
   render() {
     return (
+
       <div className="loan-application">
         <form
           onSubmit={this.submitPersonalHandler}>
@@ -74,6 +76,7 @@ export default class LoanApplication extends Component {
             value={this.state.firstName}
             onChange={this.changePersonal}
           ></input>
+
           <input
             type="text"
             name="lastName"
@@ -82,6 +85,10 @@ export default class LoanApplication extends Component {
             value={this.state.lastName}
             onChange={this.changePersonal}
           ></input>
+
+        </Fade>
+        <Fade up>
+
           <input
             type="text"
             name="email"
@@ -90,6 +97,10 @@ export default class LoanApplication extends Component {
             value={this.state.email}
             onChange={this.changePersonal}
           ></input>
+
+        </Fade>
+        <Fade up>
+
           <input
             type="text"
             name="city"
@@ -98,6 +109,10 @@ export default class LoanApplication extends Component {
             value={this.state.city}
             onChange={this.changePersonal}
           ></input>
+
+        </Fade>
+        <Fade up>
+
           <input
             type="text"
             name="state"
@@ -106,6 +121,10 @@ export default class LoanApplication extends Component {
             value={this.state.state}
             onChange={this.changePersonal}
           ></input>
+
+        </Fade>
+        <Fade up>
+
           <input
             type="tel"
             name="primaryPhone"
@@ -114,6 +133,10 @@ export default class LoanApplication extends Component {
             value={this.state.primaryPhone}
             onChange={this.changePersonal}
           ></input>
+
+        </Fade>
+        <Fade up>
+
           <input
             type="text"
             name="dateOfBirth"
@@ -122,8 +145,14 @@ export default class LoanApplication extends Component {
             value={this.state.dateOfBirth}
             onChange={this.changePersonal}
           ></input>
-            <input type="submit"
-            value="submit"></input>
+        </Fade>
+        <Fade up>
+          <input
+            className="application-submit" 
+            type="submit"
+            value="submit"
+          ></input>
+        </Fade>
 
         </form>
         //financial info form
@@ -161,6 +190,8 @@ export default class LoanApplication extends Component {
         </form>
         
       </div>
+      </form>
+    </div>
     )
   }
 }

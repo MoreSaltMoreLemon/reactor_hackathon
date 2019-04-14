@@ -1,0 +1,475 @@
+{
+	"uuid": "b0cd8cda-5415-4eb7-afe5-54a3a71d93a0",
+	"leadUuid": "d2b33959-9179-4784-8da7-9f89dcaceb39",
+	"creditCardOffers": [
+
+	],
+	"loanOffers": [
+		{
+			"uuid": "a3dd7f4e-6794-42de-ac5f-3034e0ac29d0",
+			"originator": {
+				"key": "payoff",
+				"name": "Payoff",
+				"description": "<span> <ul> <li>With a Payoff Loan, you, like other Payoff Members, could raise your credit score by 40 points*.</li> <li>You can consolidate all your credit card payments down to one monthly, affordable, fixed-rate payment between 8%¬ and 25% APR.</li> <li>You WON’T pay any prepayment penalties, application fees, late fees or hidden fees. Because no one wants to do that.</li> <li>Loans for refinancing credit card debt from $5,000 to $35,000</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/payoff/payoff_120.png"
+					}
+				],
+				"disclaimer": "This does not constitute an actual commitment to lend or an offer to  extend credit.",
+				"companyUuid": "f3ddaa43-baa5-4bbb-bb35-806cd33b6625"
+			},
+			"originatorId": null,
+			"termLength": 36,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 5000,
+			"maxApr": 25,
+			"minApr": 8,
+			"meanApr": 16.5,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 156.69,
+			"maxMonthlyPayment": 198.8,
+			"minMonthlyPayment": 156.69,
+			"meanMonthlyPayment": 177.03,
+			"maxTotalPayment": 7157,
+			"minTotalPayment": 5641,
+			"meanTotalPayment": 6374,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/f455123f-4554-4a16-8715-251a7cefc744",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "84ffd3fe-a313-4d95-8ff8-ed7394911d03",
+			"originator": {
+				"key": "best-egg",
+				"name": "Best Egg",
+				"description": "<span> <ul> <li>Personal loans up to $35,000 with fixed APRs from 5.99% to 29.99% and no pre-payment penalties</li> <li>Use a Best Egg loan to pay off credit cards, for home improvements or other unexpected expenses</li> <li>Easy, hassle-free online loan application that can get you money in as little as one business day</li> </span><span><li> Trusted lender with A+ BBB rating, more than 300,000 customers served and over $5 billion in funded loans</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/bestegg/bestegg_600w.png"
+					}
+				],
+				"disclaimer": "The Annual Percentage Rate (APR) is the cost of credit as a yearly rate and ranges from 5.99%-29.99%, which may include an origination fee from 0.99%–5.99%. Any origination fee on a 5-year loan will be at least 4.99% and is deducted from loan proceeds. The APR offered will depend on your credit score, income, debt payment obligations, loan amount, loan term, credit usage history and other factors, and therefore may be higher than our lowest advertised rate. Requests for the highest loan amount may resulting an APR higher than our lowest advertised rate. You need a minimum 700 FICO® score and a minimum individual annual income of $100,000 to qualify for our lowest rate. Best Egg loans are unsecured personal loans made by Cross River Bank, a New Jersey State Chartered Commercial Bank, Member FDIC. Equal Housing Lender. \"Best Egg\" is a trademark of Marlette Funding LLC. All uses of \"Best Egg\" on this site mean and shall refer to \"the Best Egg personal loan\" and/or \"Best Egg on behalf of Cross River Bank, as originator of the Best Egg personal loan,\" as applicable. Loan amounts generally range from $2,000-$35,000. Offers up to $50,000 may be available for qualified customers who receive offer codes in the mail. The minimum individual annual income needed to qualify for a loan of $50,000 is $130,000. Borrowers may hold no more than two open Best Egg loans at any given time. In order to be eligible for a second Best Egg loan, your existing Best Egg loan must have been open for at least six months. Total existing Best Egg loan balances must not exceed $50,000. All loans in MA must exceed $6,000; in NM, OH must exceed $5,000; in GA must exceed $3,000. Borrowers should refer to their loan agreement for specific terms and conditions. A loan example: a 5–year $10,000 loan with 9.99% APR has 60 scheduled monthly payments of $201.81, and a 3–year $5,000 loan with 5.99% APR has 36 scheduled monthly payments of $150.57. Your verifiable income must support your ability to repay your loan. Upon loan funding, the timing of available funds may vary depending upon your bank's policies. To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you.",
+				"companyUuid": "e8321746-1e5f-4981-bca6-be5e84782528"
+			},
+			"originatorId": null,
+			"termLength": 60,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 29.99,
+			"minApr": 15.99,
+			"meanApr": 22.99,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 48.63,
+			"maxMonthlyPayment": 64.7,
+			"minMonthlyPayment": 48.63,
+			"meanMonthlyPayment": 56.37,
+			"maxTotalPayment": 3882,
+			"minTotalPayment": 2918,
+			"meanTotalPayment": 3383,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/588d3e49-16f1-4414-bb47-b43d922cbde2",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "c924fe9c-8fc3-4fff-b4d7-1df69e702c5c",
+			"originator": {
+				"key": "best-egg",
+				"name": "Best Egg",
+				"description": "<span> <ul> <li>Personal loans up to $35,000 with fixed APRs from 5.99% to 29.99% and no pre-payment penalties</li> <li>Use a Best Egg loan to pay off credit cards, for home improvements or other unexpected expenses</li> <li>Easy, hassle-free online loan application that can get you money in as little as one business day</li> </span><span><li> Trusted lender with A+ BBB rating, more than 300,000 customers served and over $5 billion in funded loans</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/bestegg/bestegg_600w.png"
+					}
+				],
+				"disclaimer": "The Annual Percentage Rate (APR) is the cost of credit as a yearly rate and ranges from 5.99%-29.99%, which may include an origination fee from 0.99%–5.99%. Any origination fee on a 5-year loan will be at least 4.99% and is deducted from loan proceeds. The APR offered will depend on your credit score, income, debt payment obligations, loan amount, loan term, credit usage history and other factors, and therefore may be higher than our lowest advertised rate. Requests for the highest loan amount may resulting an APR higher than our lowest advertised rate. You need a minimum 700 FICO® score and a minimum individual annual income of $100,000 to qualify for our lowest rate. Best Egg loans are unsecured personal loans made by Cross River Bank, a New Jersey State Chartered Commercial Bank, Member FDIC. Equal Housing Lender. \"Best Egg\" is a trademark of Marlette Funding LLC. All uses of \"Best Egg\" on this site mean and shall refer to \"the Best Egg personal loan\" and/or \"Best Egg on behalf of Cross River Bank, as originator of the Best Egg personal loan,\" as applicable. Loan amounts generally range from $2,000-$35,000. Offers up to $50,000 may be available for qualified customers who receive offer codes in the mail. The minimum individual annual income needed to qualify for a loan of $50,000 is $130,000. Borrowers may hold no more than two open Best Egg loans at any given time. In order to be eligible for a second Best Egg loan, your existing Best Egg loan must have been open for at least six months. Total existing Best Egg loan balances must not exceed $50,000. All loans in MA must exceed $6,000; in NM, OH must exceed $5,000; in GA must exceed $3,000. Borrowers should refer to their loan agreement for specific terms and conditions. A loan example: a 5–year $10,000 loan with 9.99% APR has 60 scheduled monthly payments of $201.81, and a 3–year $5,000 loan with 5.99% APR has 36 scheduled monthly payments of $150.57. Your verifiable income must support your ability to repay your loan. Upon loan funding, the timing of available funds may vary depending upon your bank's policies. To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you.",
+				"companyUuid": "e8321746-1e5f-4981-bca6-be5e84782528"
+			},
+			"originatorId": null,
+			"termLength": 36,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 29.99,
+			"minApr": 12.99,
+			"meanApr": 21.49,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 67.38,
+			"maxMonthlyPayment": 84.9,
+			"minMonthlyPayment": 67.38,
+			"meanMonthlyPayment": 75.86,
+			"maxTotalPayment": 3057,
+			"minTotalPayment": 2426,
+			"meanTotalPayment": 2731,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/be9ded5b-e950-4ee2-9ce9-2ee30d3c52a7",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "09326d72-171e-47dc-933c-71e4cfb4e299",
+			"originator": {
+				"key": "best-egg",
+				"name": "Best Egg",
+				"description": "<span> <ul> <li>Personal loans up to $35,000 with fixed APRs from 5.99% to 29.99% and no pre-payment penalties</li> <li>Use a Best Egg loan to pay off credit cards, for home improvements or other unexpected expenses</li> <li>Easy, hassle-free online loan application that can get you money in as little as one business day</li> </span><span><li> Trusted lender with A+ BBB rating, more than 300,000 customers served and over $5 billion in funded loans</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/bestegg/bestegg_600w.png"
+					}
+				],
+				"disclaimer": "The Annual Percentage Rate (APR) is the cost of credit as a yearly rate and ranges from 5.99%-29.99%, which may include an origination fee from 0.99%–5.99%. Any origination fee on a 5-year loan will be at least 4.99% and is deducted from loan proceeds. The APR offered will depend on your credit score, income, debt payment obligations, loan amount, loan term, credit usage history and other factors, and therefore may be higher than our lowest advertised rate. Requests for the highest loan amount may resulting an APR higher than our lowest advertised rate. You need a minimum 700 FICO® score and a minimum individual annual income of $100,000 to qualify for our lowest rate. Best Egg loans are unsecured personal loans made by Cross River Bank, a New Jersey State Chartered Commercial Bank, Member FDIC. Equal Housing Lender. \"Best Egg\" is a trademark of Marlette Funding LLC. All uses of \"Best Egg\" on this site mean and shall refer to \"the Best Egg personal loan\" and/or \"Best Egg on behalf of Cross River Bank, as originator of the Best Egg personal loan,\" as applicable. Loan amounts generally range from $2,000-$35,000. Offers up to $50,000 may be available for qualified customers who receive offer codes in the mail. The minimum individual annual income needed to qualify for a loan of $50,000 is $130,000. Borrowers may hold no more than two open Best Egg loans at any given time. In order to be eligible for a second Best Egg loan, your existing Best Egg loan must have been open for at least six months. Total existing Best Egg loan balances must not exceed $50,000. All loans in MA must exceed $6,000; in NM, OH must exceed $5,000; in GA must exceed $3,000. Borrowers should refer to their loan agreement for specific terms and conditions. A loan example: a 5–year $10,000 loan with 9.99% APR has 60 scheduled monthly payments of $201.81, and a 3–year $5,000 loan with 5.99% APR has 36 scheduled monthly payments of $150.57. Your verifiable income must support your ability to repay your loan. Upon loan funding, the timing of available funds may vary depending upon your bank's policies. To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you.",
+				"companyUuid": "e8321746-1e5f-4981-bca6-be5e84782528"
+			},
+			"originatorId": null,
+			"termLength": 36,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 29.99,
+			"minApr": 5.99,
+			"meanApr": 17.99,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 60.84,
+			"maxMonthlyPayment": 84.9,
+			"minMonthlyPayment": 60.84,
+			"meanMonthlyPayment": 72.3,
+			"maxTotalPayment": 3057,
+			"minTotalPayment": 2191,
+			"meanTotalPayment": 2603,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/9f29d0f6-eb25-422e-8e60-92e6d1e3e683",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "1c41f868-e25d-48df-9dfd-ee687972ea0b",
+			"originator": {
+				"key": "best-egg",
+				"name": "Best Egg",
+				"description": "<span> <ul> <li>Personal loans up to $35,000 with fixed APRs from 5.99% to 29.99% and no pre-payment penalties</li> <li>Use a Best Egg loan to pay off credit cards, for home improvements or other unexpected expenses</li> <li>Easy, hassle-free online loan application that can get you money in as little as one business day</li> </span><span><li> Trusted lender with A+ BBB rating, more than 300,000 customers served and over $5 billion in funded loans</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/bestegg/bestegg_600w.png"
+					}
+				],
+				"disclaimer": "The Annual Percentage Rate (APR) is the cost of credit as a yearly rate and ranges from 5.99%-29.99%, which may include an origination fee from 0.99%–5.99%. Any origination fee on a 5-year loan will be at least 4.99% and is deducted from loan proceeds. The APR offered will depend on your credit score, income, debt payment obligations, loan amount, loan term, credit usage history and other factors, and therefore may be higher than our lowest advertised rate. Requests for the highest loan amount may resulting an APR higher than our lowest advertised rate. You need a minimum 700 FICO® score and a minimum individual annual income of $100,000 to qualify for our lowest rate. Best Egg loans are unsecured personal loans made by Cross River Bank, a New Jersey State Chartered Commercial Bank, Member FDIC. Equal Housing Lender. \"Best Egg\" is a trademark of Marlette Funding LLC. All uses of \"Best Egg\" on this site mean and shall refer to \"the Best Egg personal loan\" and/or \"Best Egg on behalf of Cross River Bank, as originator of the Best Egg personal loan,\" as applicable. Loan amounts generally range from $2,000-$35,000. Offers up to $50,000 may be available for qualified customers who receive offer codes in the mail. The minimum individual annual income needed to qualify for a loan of $50,000 is $130,000. Borrowers may hold no more than two open Best Egg loans at any given time. In order to be eligible for a second Best Egg loan, your existing Best Egg loan must have been open for at least six months. Total existing Best Egg loan balances must not exceed $50,000. All loans in MA must exceed $6,000; in NM, OH must exceed $5,000; in GA must exceed $3,000. Borrowers should refer to their loan agreement for specific terms and conditions. A loan example: a 5–year $10,000 loan with 9.99% APR has 60 scheduled monthly payments of $201.81, and a 3–year $5,000 loan with 5.99% APR has 36 scheduled monthly payments of $150.57. Your verifiable income must support your ability to repay your loan. Upon loan funding, the timing of available funds may vary depending upon your bank's policies. To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you.",
+				"companyUuid": "e8321746-1e5f-4981-bca6-be5e84782528"
+			},
+			"originatorId": null,
+			"termLength": 60,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 29.99,
+			"minApr": 8.99,
+			"meanApr": 19.49,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 41.51,
+			"maxMonthlyPayment": 64.7,
+			"minMonthlyPayment": 41.51,
+			"meanMonthlyPayment": 52.43,
+			"maxTotalPayment": 3882,
+			"minTotalPayment": 2491,
+			"meanTotalPayment": 3146,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/4bd8f234-d2b5-44ef-920c-fedab2d227f5",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "2e73e611-9e0b-4065-8f96-789b659479b0",
+			"originator": {
+				"key": "prosper",
+				"name": "Prosper",
+				"description": "<span> <ul> <li>Low fixed rate personal loans from $2,000 to $40,000</li> <li>No impact to your credit score for checking your rate</li> <li>Rates from 6.95% to 35.99% APR</li> <li>No prepayment penalties</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/prosper/prosper_600w.png"
+					}
+				],
+				"disclaimer": "<p>For example, a three-year $10,000 loan with a Prosper Rating of AA would have an interest rate of 5.31% and a 2.41% origination fee for an annual percentage rate (APR) of 6.95% APR. You would receive $9,759 and make 36 scheduled monthly payments of $301.10. A five-year $10,000 loan with a Prosper Rating of A would have an interest rate of 8.39% and a 5.00% origination fee with a 10.59% APR. You would receive $9,500 and make 60 scheduled monthly payments of $204.64. Origination fees vary between 2.41%-5%. APRs through Prosper range from 6.95% (AA) to 35.99% (HR) for first-time borrowers, with the lowest rates for the most creditworthy borrowers. Eligibility for loans up to $40,000 depends on the information provided by the applicant in the application form. Eligibility is not guaranteed, and requires that a sufficient number of investors commit funds to your account and that you meet credit and other conditions. Refer to Borrower Registration Agreement for details and all terms and conditions. All loans made by WebBank, member FDIC.</p>",
+				"companyUuid": "aff0bf73-38ff-428b-95e1-92cf003a3a1e"
+			},
+			"originatorId": null,
+			"termLength": 36,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 12.94,
+			"minApr": 11.92,
+			"meanApr": 12.43,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 66.36,
+			"maxMonthlyPayment": 62.36,
+			"minMonthlyPayment": 66.36,
+			"meanMonthlyPayment": 66.85,
+			"maxTotalPayment": 2425,
+			"minTotalPayment": 2389,
+			"meanTotalPayment": 2407,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/cdace1e3-69a9-4c7e-9956-c0ce33bffac9",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "db2a5beb-289f-41d1-80a8-c693d2f2b655",
+			"originator": {
+				"key": "prosper",
+				"name": "Prosper",
+				"description": "<span> <ul> <li>Low fixed rate personal loans from $2,000 to $40,000</li> <li>No impact to your credit score for checking your rate</li> <li>Rates from 6.95% to 35.99% APR</li> <li>No prepayment penalties</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/prosper/prosper_600w.png"
+					}
+				],
+				"disclaimer": "<p>For example, a three-year $10,000 loan with a Prosper Rating of AA would have an interest rate of 5.31% and a 2.41% origination fee for an annual percentage rate (APR) of 6.95% APR. You would receive $9,759 and make 36 scheduled monthly payments of $301.10. A five-year $10,000 loan with a Prosper Rating of A would have an interest rate of 8.39% and a 5.00% origination fee with a 10.59% APR. You would receive $9,500 and make 60 scheduled monthly payments of $204.64. Origination fees vary between 2.41%-5%. APRs through Prosper range from 6.95% (AA) to 35.99% (HR) for first-time borrowers, with the lowest rates for the most creditworthy borrowers. Eligibility for loans up to $40,000 depends on the information provided by the applicant in the application form. Eligibility is not guaranteed, and requires that a sufficient number of investors commit funds to your account and that you meet credit and other conditions. Refer to Borrower Registration Agreement for details and all terms and conditions. All loans made by WebBank, member FDIC.</p>",
+				"companyUuid": "aff0bf73-38ff-428b-95e1-92cf003a3a1e"
+			},
+			"originatorId": null,
+			"termLength": 60,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 11.61,
+			"minApr": 10.59,
+			"meanApr": 11.1,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 43.08,
+			"maxMonthlyPayment": 43.49,
+			"minMonthlyPayment": 43.08,
+			"meanMonthlyPayment": 43.59,
+			"maxTotalPayment": 2646,
+			"minTotalPayment": 2585,
+			"meanTotalPayment": 2616,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/ef6a6459-01da-45c5-b677-bb272f2dd073",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "1fbf3b29-e02f-4668-8a7a-61ded9acacfb",
+			"originator": {
+				"key": "prosper",
+				"name": "Prosper",
+				"description": "<span> <ul> <li>Low fixed rate personal loans from $2,000 to $40,000</li> <li>No impact to your credit score for checking your rate</li> <li>Rates from 6.95% to 35.99% APR</li> <li>No prepayment penalties</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/prosper/prosper_600w.png"
+					}
+				],
+				"disclaimer": "<p>For example, a three-year $10,000 loan with a Prosper Rating of AA would have an interest rate of 5.31% and a 2.41% origination fee for an annual percentage rate (APR) of 6.95% APR. You would receive $9,759 and make 36 scheduled monthly payments of $301.10. A five-year $10,000 loan with a Prosper Rating of A would have an interest rate of 8.39% and a 5.00% origination fee with a 10.59% APR. You would receive $9,500 and make 60 scheduled monthly payments of $204.64. Origination fees vary between 2.41%-5%. APRs through Prosper range from 6.95% (AA) to 35.99% (HR) for first-time borrowers, with the lowest rates for the most creditworthy borrowers. Eligibility for loans up to $40,000 depends on the information provided by the applicant in the application form. Eligibility is not guaranteed, and requires that a sufficient number of investors commit funds to your account and that you meet credit and other conditions. Refer to Borrower Registration Agreement for details and all terms and conditions. All loans made by WebBank, member FDIC.</p>",
+				"companyUuid": "aff0bf73-38ff-428b-95e1-92cf003a3a1e"
+			},
+			"originatorId": null,
+			"termLength": 60,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 8.22,
+			"minApr": 6.16,
+			"meanApr": 7.19,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 38.82,
+			"maxMonthlyPayment": 42.42,
+			"minMonthlyPayment": 38.82,
+			"meanMonthlyPayment": 39.79,
+			"maxTotalPayment": 2447,
+			"minTotalPayment": 2330,
+			"meanTotalPayment": 2388,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/3b5dae4d-1828-436b-b4c1-67bb0a1571ae",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		},
+		{
+			"uuid": "560cb836-f593-4b7c-9770-2797d91a14f2",
+			"originator": {
+				"key": "prosper",
+				"name": "Prosper",
+				"description": "<span> <ul> <li>Low fixed rate personal loans from $2,000 to $40,000</li> <li>No impact to your credit score for checking your rate</li> <li>Rates from 6.95% to 35.99% APR</li> <li>No prepayment penalties</li> </ul> </span>",
+				"images": [
+					{
+						"sizeKey": "120x40",
+						"url": "aff-tag.evenfinancial.com/images/prosper/prosper_600w.png"
+					}
+				],
+				"disclaimer": "<p>For example, a three-year $10,000 loan with a Prosper Rating of AA would have an interest rate of 5.31% and a 2.41% origination fee for an annual percentage rate (APR) of 6.95% APR. You would receive $9,759 and make 36 scheduled monthly payments of $301.10. A five-year $10,000 loan with a Prosper Rating of A would have an interest rate of 8.39% and a 5.00% origination fee with a 10.59% APR. You would receive $9,500 and make 60 scheduled monthly payments of $204.64. Origination fees vary between 2.41%-5%. APRs through Prosper range from 6.95% (AA) to 35.99% (HR) for first-time borrowers, with the lowest rates for the most creditworthy borrowers. Eligibility for loans up to $40,000 depends on the information provided by the applicant in the application form. Eligibility is not guaranteed, and requires that a sufficient number of investors commit funds to your account and that you meet credit and other conditions. Refer to Borrower Registration Agreement for details and all terms and conditions. All loans made by WebBank, member FDIC.</p>",
+				"companyUuid": "aff0bf73-38ff-428b-95e1-92cf003a3a1e"
+			},
+			"originatorId": null,
+			"termLength": 36,
+			"termUnit": "month",
+			"maxAmount": 35000,
+			"minAmount": 2000,
+			"maxApr": 9.74,
+			"minApr": 5.99,
+			"meanApr": 7.865,
+			"feeRate": null,
+			"maxFeeRate": null,
+			"minFeeRate": null,
+			"feeFixed": null,
+			"maxFeeFixed": null,
+			"minFeeFixed": null,
+			"allowPrepayment": true,
+			"prepaymentFee": 0,
+			"monthlyPayment": 60.84,
+			"maxMonthlyPayment": 60.83,
+			"minMonthlyPayment": 60.84,
+			"meanMonthlyPayment": 62.55,
+			"maxTotalPayment": 2315,
+			"minTotalPayment": 2191,
+			"meanTotalPayment": 2252,
+			"terms": null,
+			"url": "https://offers.evenfinancial.com/ref/c49c48dd-89a0-4c84-8ed0-1fb9a4844b93",
+			"preQualified": false,
+			"preApproved": false,
+			"secured": false,
+			"sponsored": false,
+			"recommendationScore": 0,
+			"productType": "loan",
+			"productSubType": "personal_loan"
+		}
+	],
+	"mortgageOffers": [
+
+	],
+	"savingsOffers": [
+
+	],
+	"specialOffers": [
+
+	],
+	"pendingOriginators": [
+		{
+			"key": "evenMock",
+			"name": "Even Mock",
+			"images": [
+
+			],
+			"companyUuid": "88e6c17e-fc34-4532-8501-0eacd207760c"
+		}
+	],
+	"pendingResponses": [
+		{
+			"partner": {
+				"uuid": "28e489b1-92b4-4ae0-9677-bbe98fe977f8",
+				"name": "Even Mock Offer API",
+				"description": "A mock offer API for the purposes of testing.",
+				"disclaimer": "All offers are for testing purposes only",
+				"supportsPersonalizedOffers": true,
+				"imageUrl": "https://avatars3.githubusercontent.com/u/11379261?v=3&s=200"
+			},
+			"productTypes": [
+				"loan"
+			]
+		}
+	]
+}
