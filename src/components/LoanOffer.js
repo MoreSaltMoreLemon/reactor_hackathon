@@ -41,9 +41,9 @@ export default class LoanOffer extends Component {
               <a href={this.props.offer.url} >
                 <img
                   alt="loan originator image"
-                  className="ui circular image bordered"
+                  className="ui image"
                   height="100px"
-                  src={this.props.offer.originator.images[0].url}/>
+                  src={`http://${this.props.offer.originator.images[0].url}`}/>
             </a>
             </div>
           {/* Three Column Grid Representing Middle Row on Loan Card */}

@@ -1,8 +1,20 @@
+.loan-application {
+  padding-top: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
 .application{
-  display: block;
+  width: 30%;
   margin: 10px;
   padding: 3px;
-  margin-top:50vh;
+  /* margin-top:50vh; */
   font-size: 20px;
   color: white;
   background-color: rgba(0,0,0,0);
@@ -12,17 +24,10 @@
 }
 
 .application:hover, .application:focus{
-  /* transform: scale(1.1); */
   box-shadow: -5px 5px rgba(255,255, 255, 1);
   outline: none;
 }
 
-label{
-  position: fixed;
-  color: rgba(0,0,0,.3);
-  text-align: right;
-  margin: 100px;
-}
 
 .btn {
   background-color: rgb(114 169 238);
@@ -39,64 +44,52 @@ label{
 
 
 .firstName {
-  position: absolute;
-  top: 0px;
+  grid-column-start: col-start 2;
 }
 
 .lastName {
-  position: absolute;
-  top: 400px;
+  grid-area: c2r1;
 }
 
 .email {
-  position: absolute;
-  top: 800px;
+  grid-area: c3r1;
 }
 
 .city {
-  position: absolute;
-  top: 1200px;
+  grid-area: c1r2;
 }
 
 .state {
-  position: absolute;
-  top: 1600px;
+  grid-area: c2r2;
 }
 
 .primaryPhone {
-  position: absolute;
-  top: 2000px;
+  grid-area: c1r3;
 }
 
 .dateOfBirth {
-  position: absolute;
-  top: 2400px;
+  grid-area: c1r3;
 }
 
 .employed {
-  position: absolute;
-  top: 2800px;
+  grid-area: c1r4;
 }
 
 .paymentFrequency {
-  position: absolute;
-  top: 3200px;
+  grid-area: c2r4;
 }
 
 .annualIncome {
-  position: absolute;
-  top: 3600px;
+  grid-area: c1r5;
 }
 
 .monthlyNetIncome {
-  position: absolute;
-  top: 4000px;
+  grid-area: c2r5;
 }
 
 .financial-submit {
-  position: absolute;
-  top: 4400px;
-  margin-top: 200px;
+  grid-area: c2r6;
+  /* margin-top: 200px; */
 }
 
 .disabledButton{

@@ -56,9 +56,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="AppHeader">
            {this.passLoanOffers()} 
-        </header>
       </div>
     );
   }

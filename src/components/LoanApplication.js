@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/LoanApplication.css';
-import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
 
 export default class LoanApplication extends Component {
   constructor(props) {
@@ -71,7 +71,7 @@ export default class LoanApplication extends Component {
         <div className="loan-application">
           <form
             onSubmit={this.submitPersonalHandler}>
-            <Fade up>
+            {/* <Fade up> */}
               <input
                 type="text"
                 id="firstNameInput"
@@ -83,8 +83,8 @@ export default class LoanApplication extends Component {
                 onChange={this.changePersonal}
                 onKeyUp={(e)=> this.handleKeyUp(e, 'lastName')}>
               </input>
-            </Fade>
-          <Fade up>
+            
+          {/* <Fade up> */}
             <input
               type="text"
               data-attr='lastName'
@@ -96,8 +96,8 @@ export default class LoanApplication extends Component {
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'email')}>
             </input>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <input
               type="text"
               required
@@ -109,9 +109,9 @@ export default class LoanApplication extends Component {
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'city')}>
             </input>
-          </Fade>
+          
 
-          <Fade up>
+          {/* <Fade up> */}
             <input
               type="text"
               data-attr='city'
@@ -122,8 +122,8 @@ export default class LoanApplication extends Component {
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'state')}>
             </input>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <input
               type="text"
               data-attr='state'
@@ -134,8 +134,8 @@ export default class LoanApplication extends Component {
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'primaryPhone')}>
             </input>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <input
               type="tel"
               data-attr='primaryPhone'
@@ -146,8 +146,8 @@ export default class LoanApplication extends Component {
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'dateOfBirth')}>
             </input>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <input
               type="date"
               data-attr='dateOfBirth'
@@ -159,10 +159,10 @@ export default class LoanApplication extends Component {
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'employmentStatus')}>
             </input>
-          </Fade>
+          
 
         {/*financial info*/}
-          <Fade up>
+          {/* <Fade up> */}
             <select
               name='employmentStatus'
               data-attr='employmentStatus'
@@ -174,8 +174,8 @@ export default class LoanApplication extends Component {
               <option value='employed'>Employed</option>
               <option value='unemployed'>Unemployed</option>
             </select>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <select
               name="employmentPayFrequency"
               data-attr='employmentPayFrequency'
@@ -189,44 +189,46 @@ export default class LoanApplication extends Component {
               <option value="fortnightly"> Fortnightly</option>
               <option value="monthly"> Monthly</option>
             </select>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <input
               type="text"
               data-attr='annualIncome'
               name="annualIncome"
               className="application annualIncome"
               placeholder="annualIncome"
+              required
               value={this.state.financialInformation.annualIncome}
               onKeyUp={(e)=> this.handleKeyUp(e, 'monthlyNetIncome')}
               onChange={this.changeFinancial}>
             </input>
-          </Fade>
-          <Fade up>
+          
+          {/* <Fade up> */}
             <input
               type="text"
               data-attr='monthlyNetIncome'
               name="monthlyNetIncome"
               className="application monthlyNetIncome"
               placeholder="monthlyNetIncome"
+              required
               value={this.state.financialInformation.monthlyNetIncome}
               onKeyUp={(e)=> this.handleKeyUp(e, 'submit')}
               onChange={this.changeFinancial}>
             </input>
-          </Fade>
+          
           <button
             type="submit"
             disabled
             className='disabledButton'>
           </button>
-          <Fade up>
+          {/* <Fade up> */}
             <input
               data-attr='submit'
               className="financial-submit btn"
               type="submit"
               value="Submit">
             </input>
-          </Fade>
+          
         </form>
       </div>
     )
