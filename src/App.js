@@ -9,14 +9,22 @@ class App extends Component {
 
     this.state = {
       application: {productTypes: [
-        "loan", 
+        "loan",
         "savings"
-      ], personalInformation: {}  },
+      ],
+        personalInformation: {},
+        financialInformation: {}
+      },
     }
   }
 
-  passApplicationInfo = (applicationDetails) => {
+  passPersonalApplicationInfo = (applicationDetails) => {
     this.setState({personalInformation: applicationDetails})
+
+
+  passFinancialApplicationInfo = (applicationDetails) => {
+    this.setState({personalInformation: applicationDetails})
+
   
     httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: applicationDetails})
       .then(r => r.json())
@@ -26,6 +34,7 @@ class App extends Component {
           .then(r => r.json())
           .then(j => { 
             console.log("RATETABLES:", JSON.stringify(j))
+
             this.setState({ lead: j })
           })
       })
@@ -47,7 +56,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {/* {this.renderLoanOffers()} */}
-          <LoanApplication passApplicationInfo={this.passApplicationInfo} />
+          <LoanApplication
+            passApplicationInfo={this.passApplicationInfo}
+            passFinancialApplicationInfo={this.passFinancialApplicationInfo}
+            />
         </header>
       </div>
     );
