@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
+import '../styles/Parallax.css'
 
 export default class Layer extends Component {
 
   generateStyle(layer) {
     console.log("LAYER STYLE", layer)
     return {
-      'position': 'absolute',
-      'backgroundImage': `url('${layer.url}')`,
-      'backgroundPosition': 'left bottom',
-      'minHeight': '1000px',
-      'height': '100%',
-      'width': '100vw',
-      'backgroundRepeat': 'no-repeat',
-      'backgroundSize': 'cover'
+      // 'backgroundImage': `url('${layer.url}')`,
+      // 'transform': `translateZ(${layer.depth}px) scale(${layer.scale})`,
+      // 'zIndex': layer.z
     }
   }
 
@@ -20,9 +16,7 @@ export default class Layer extends Component {
 
     const style = this.generateStyle(this.props.layer)
     return (
-      <div style={style}>
-
-      </div>
+      <div className={`parallax-layer layer${this.props.layer.id}`}></div>
     )
   }
 }

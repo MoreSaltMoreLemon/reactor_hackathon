@@ -31,14 +31,14 @@ export default class Parallax extends Component {
     const style = {
       // height: px.pos.height,
       // width: px.pos.width,
-      zIndex: px.pos.zDepth,
+      // zIndex: px.pos.zDepth,
       // top: px.pos.y,
       // left: px.pos.x
     }
     return (
-      <div className='parallax' style={style}>
-        {/* {JSON.stringify(this.props.parallax)} */}
-        {this.renderLayers()}
+      <div className='parallax'>
+          {/* {JSON.stringify(this.props.parallax)} */}
+          {this.renderLayers()}
       </div>
     )
   }
