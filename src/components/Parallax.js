@@ -9,26 +9,36 @@ export default class Parallax extends Component {
     window.addEventListener('scroll', this.scroll.bind(this))
   }
 
-  // scroll = (e) => {
-  //   const parallax = this.props.parallax
-  //   const layers = parallax.layers
-  //   const topDistance = window.pageYOffset + parallax.pos.y
+  scroll = (e) => {
+    const parallax = this.props.parallax
+    const layers = parallax.layers
+    const topDistance = window.pageYOffset + parallax.pos.y
 
-  //   layers.forEach
+    // layers.forEach
 
-  // }
+  }
 
   renderLayers() {
-    this.props.parallax.layers.map(layer => {
-      const style = {'background': `url(${layer.url})`}
-      return  <Layer style={style} />
+    return this.props.parallax.layers.map(layer => {
+      return  <Layer key={layer.url} layer={layer} />
     })
   }
 
   render() {
+    // debugger
+    const px = this.props.parallax
+    console.log("PARALLAX", px)
+    const style = {
+      // height: px.pos.height,
+      // width: px.pos.width,
+      zIndex: px.pos.zDepth,
+      // top: px.pos.y,
+      // left: px.pos.x
+    }
     return (
-      <div>
-        {/* {this.renderLayers()} */}
+      <div className='parallax' style={style}>
+        {/* {JSON.stringify(this.props.parallax)} */}
+        {this.renderLayers()}
       </div>
     )
   }
