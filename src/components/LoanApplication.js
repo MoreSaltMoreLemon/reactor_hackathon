@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import '../styles/LoanApplication.css';
 import Fade from 'react-reveal/Fade'
-
+import { Mountain } from '../data/parallaxes'
+import Parallax from './Parrallax'
 
 export default class LoanApplication extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ export default class LoanApplication extends Component {
       "ssn": "111-22-3333"
     }
   }
-
+  
   changeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
@@ -44,7 +45,7 @@ export default class LoanApplication extends Component {
 
       <div className="loan-application">
 
-
+        <Parallax data={Mountain} />
         <form onSubmit={this.submitHandler}>
           <Fade up>
             <input
@@ -117,13 +118,16 @@ export default class LoanApplication extends Component {
           ></input>
         </Fade>
         <Fade up>
-            <input type="submit"
-            value="submit"></input>
-          </Fade>
+          <input
+            className="application-submit" 
+            type="submit"
+            value="submit"
+          ></input>
+        </Fade>
 
-        </form>
+      </form>
 
-      </div>
+    </div>
     )
   }
 }

@@ -11,7 +11,47 @@
 }
 
 .application:hover, .application:focus{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   box-shadow: -5px 5px rgba(255,255, 255, 1);
   outline: none;
+}
+
+.firstName {
+  position: absolute;
+  top: 200px;
+}
+
+.lastName {
+  position: absolute;
+  top: 600px;
+}
+
+.email {
+  position: absolute;
+  top: 1000px;
+}
+
+.city {
+  position: absolute;
+  top: 1400px;
+}
+
+.state {
+  position: absolute;
+  top: 2000px;
+}
+
+.primaryPhone {
+  position: absolute;
+  top: 2400px;
+}
+
+.dateOfBirth {
+  position: absolute;
+  top: 3000px;
+}
+
+.application-submit {
+  position: absolute;
+  top: 3400px;
 }
