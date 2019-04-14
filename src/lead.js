@@ -37,39 +37,39 @@ const lead = {
   //   "hasFHALoan": true, 
   //   "currentWithLoan": true
   // }, 
-  "creditCardInformation": {
-    "allowAnnualFee": true, 
-    "cardBenefits": [
-      "travel_incentives"
-    ]
-  }, 
-  "creditInformation": {
-    "providedCreditRating": "excellent", 
-    "providedNumericCreditScore": 800
-  }, 
-  "financialInformation": {
-    "employmentStatus": "employed", 
-    "employmentPayFrequency": "weekly", 
-    "annualIncome": 120000, 
-    "monthlyNetIncome": 10000, 
-    "bankName": "Santander", 
-    "bankRoutingNumber": "231372691", 
-    "bankAccountType": "savings", 
-    "monthsAtBank": 10, 
-    "bankAccountNumber": "1234567890"
-  }, 
-  "employmentInformation": {
-    "employerName": "EVEN Financial", 
-    "employerAddress": "45 W 21st St", 
-    "employerCity": "New York", 
-    "employerState": "NY", 
-    "employerZip": "10010", 
-    "jobTitle": "Software Engineer", 
-    "monthsEmployed": 14, 
-    "directDeposit": true, 
-    "payDate1": "2004-10-06", 
-    "payDate2": "2004-11-06"
-  }, 
+  // "creditCardInformation": {
+  //   "allowAnnualFee": true, 
+  //   "cardBenefits": [
+  //     "travel_incentives"
+  //   ]
+  // }, 
+  // "creditInformation": {
+  //   "providedCreditRating": "excellent", 
+  //   "providedNumericCreditScore": 800
+  // }, 
+  // "financialInformation": {
+  //   "employmentStatus": "employed", 
+  //   "employmentPayFrequency": "weekly", 
+  //   "annualIncome": 120000, 
+  //   "monthlyNetIncome": 10000, 
+  //   "bankName": "Santander", 
+  //   "bankRoutingNumber": "231372691", 
+  //   "bankAccountType": "savings", 
+  //   "monthsAtBank": 10, 
+  //   "bankAccountNumber": "1234567890"
+  // }, 
+  // "employmentInformation": {
+  //   "employerName": "EVEN Financial", 
+  //   "employerAddress": "45 W 21st St", 
+  //   "employerCity": "New York", 
+  //   "employerState": "NY", 
+  //   "employerZip": "10010", 
+  //   "jobTitle": "Software Engineer", 
+  //   "monthsEmployed": 14, 
+  //   "directDeposit": true, 
+  //   "payDate1": "2004-10-06", 
+  //   "payDate2": "2004-11-06"
+  // }, 
   // "legalInformation": {
   //   "consentsToFcra": true, 
   //   "consentsToTcpa": true, 

@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
-import { lead } from './lead'
+import './styles/App.css';
 import LoanOffer from './components/LoanOffer'
+import LoanApplication from './components/LoanApplication'
 
 class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      application: {productTypes: [
+        "loan", 
+        "savings"
+      ], personalInformation: {}  },
+    }
   }
 
-  componentDidMount() {
-    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead})
+  passApplicationInfo = (applicationDetails) => {
+    this.setState({personalInformation: applicationDetails})
+  
+    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: applicationDetails})
       .then(r => r.json())
       .then(j => {
         const uuid = j.uuid
@@ -39,7 +46,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {this.renderLoanOffers()}
+          {/* {this.renderLoanOffers()} */}
+          <LoanApplication passApplicationInfo={this.passApplicationInfo} />
         </header>
       </div>
     );

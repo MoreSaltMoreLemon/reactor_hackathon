@@ -1,0 +1,17 @@
+.application{
+  display: block;
+  margin: 10px;
+  padding: 3px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  box-shadow: -5px 5px rgba(255,255, 255, .5);
+  border-width: 0px;
+  transition: .2s;
+}
+
+.application:hover, .application:focus{
+  transform: scale(1.1);
+  box-shadow: -5px 5px rgba(255,255, 255, 1);
+  outline: none;
+}
