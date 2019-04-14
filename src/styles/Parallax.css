@@ -1,94 +1,70 @@
-$bronze: #130d0a;
-$white: #fff;
-$heroHeight: 800px;
-
-body {
-	padding: 0;
-	margin: 0;
-	background-color: $bronze;
-	font-family: 'Playfair Display', serif;
-	color: $white;
+.parallax-container {/* preserve-3d; */
+  height: 100vh;
+  overflow: hidden;
 }
 
-#hero {
-	height: $heroHeight;
-	overflow: hidden;
-	position: relative;
-}
-#content {
-	background-color: $bronze;
-}
-.layer {
-	background-position: bottom center;
-	background-size: auto;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: $heroHeight;
-	position: fixed;
-	z-index: -1;
+.parallax {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-area: 'img';
+  /* z-index: -1; */
+
 }
 
-#hero-mobile {
-	display: none;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
-	height: 320px;
+.content-container {
+  display: block;
+  position: relative;
+  background-color: white;
+  z-index: 1;
 }
 
-.first-section {
-	padding: 50px 0 20px 0;
-}
-.text-header {
-	font-size: 50px;
-	text-align: center;
-}
-h1 {
-	line-height: 120%;
-	margin-bottom: 30px;
-}
-p {
-	color: #ede0d5;
-	font-size: 18px;
-	line-height: 150%;
+.parallax-layer {
+  position: relative;
+  transform-style: inherit;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background: 50% 50% / cover;
+  grid-area: img;
 }
 
-#hero, .layer {
-	min-height: 800px;
+.parallax-layer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
 }
 
-.layer-bg {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg');
+.layer1:after {
+  background-image: url('/images/mountainside/mtn_trees.png');
+  transform: translateZ(-2px) scale(4);
+  z-index: -1;
 }
-.layer-1 {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png
-		');
-		background-position: left bottom;
-		}
-.layer-2 {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
+
+.layer2:after {
+  transform: translateZ(-3px) scale(6);
+  background-image: url('/images/mountainside/mtn_foreground_mtns.png');
+  z-index: -2;
 }
-.layer-3 {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png
-		');
-		background-position: right bottom;
-		}
-.layer-4 {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png
-		');
 
-		}
-.layer-overlay {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png
-		');
-
-		}
-
-
-// Media Queries
-@media only screen and (max-width: 768px) {
-	#hero {
-		display: none;
-	}
-	#hero-mobile {
-		display: block;
-	}
+.layer3:after {
+  background-image: url('/images/mountainside/mtn_background_mtns.png');
+  transform: translateZ(-4px) scale(8);
+  z-index: -3;
 }
+
+.layer4:after {
+  background-image: url('/images/mountainside/mtn_sky.png');
+  transform: translateZ(-5px) scale(10);
+  z-index: -4;
+}
+

@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import '../styles/LoanApplication.css';
 import Fade from 'react-reveal/Fade'
-import { Mountain } from '../data/parallaxes'
-import Parallax from './Parallax'
 
 export default class LoanApplication extends Component {
   constructor(props) {
@@ -64,8 +62,6 @@ export default class LoanApplication extends Component {
 
   render() {
     return (
-      <Fragment>
-        <Parallax parallax={Mountain} />
       <div className="loan-application">
         <form
           onSubmit={this.submitPersonalHandler}>
@@ -202,7 +198,6 @@ export default class LoanApplication extends Component {
         </form>
 
       </div>
-      </Fragment>
     )
   }
 }

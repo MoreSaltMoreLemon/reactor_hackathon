@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './styles/App.css';
 import LoanOffer from './components/LoanOffer'
 import LoanApplication from './components/LoanApplication'
+import { Mountain } from './data/parallaxes'
+import Parallax from './components/Parallax'
+import './styles/Parallax.css'
 
 class App extends Component {
   constructor(props) {
@@ -53,8 +56,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="parallax-container">
+          <Parallax parallax={Mountain} />
+          <div className='content-container'>
            {this.passLoanOffers()} 
+           </div>
         </header>
       </div>
     );
