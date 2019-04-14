@@ -78,6 +78,7 @@ export default class LoanApplication extends Component {
               <input
                 type="text"
                 placeholder="First Name"
+                required
                 name="firstName"
                 className="application firstName"
                 value={this.state.personalInformation.firstName}
@@ -91,6 +92,7 @@ export default class LoanApplication extends Component {
               type="text"
               data-attr='lastName'
               name="lastName"
+              required
               className="application lastName"
               placeholder="Last Name"
               value={this.state.personalInformation.lastName}
@@ -101,6 +103,7 @@ export default class LoanApplication extends Component {
           <Fade up>
             <input
               type="text"
+              required
               data-attr='email'
               name="email"
               className="application email"
@@ -149,8 +152,9 @@ export default class LoanApplication extends Component {
           </Fade>
           <Fade up>
             <input
-              type="text"
+              type="date"
               data-attr='dateOfBirth'
+              required
               name="dateOfBirth"
               className="application dateOfBirth"
               placeholder="dateOfBirth"
@@ -221,9 +225,9 @@ export default class LoanApplication extends Component {
           <Fade up>
             <input
               data-attr='submit'
-              className="financial-submit"
+              className="financial-submit btn"
               type="submit"
-              value="submit">
+              value="Submit">
             </input>
           </Fade>
         </form>
