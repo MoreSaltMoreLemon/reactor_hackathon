@@ -79,3 +79,8 @@
   position: absolute;
   top: 6000px;
 }
+
+.disabledButton{
+  display: none;
+
+}
