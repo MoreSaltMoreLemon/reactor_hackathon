@@ -18,14 +18,14 @@ class App extends Component {
   passApplicationInfo = (applicationDetails) => {
     this.setState({personalInformation: applicationDetails})
   
-    httpRequest('http://10.104.148.49:3000/api/v1/lead', 'post', {lead: applicationDetails})
+    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: applicationDetails})
       .then(r => r.json())
       .then(j => {
         const uuid = j.uuid
         httpRequest('http://localhost:3000/api/v1/ratetables', 'post', {uuid})
           .then(r => r.json())
           .then(j => { 
-            console.log("RATETABLES:", j)
+            console.log("RATETABLES:", JSON.stringify(j))
             this.setState({ lead: j })
           })
       })
