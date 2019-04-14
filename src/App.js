@@ -8,25 +8,28 @@ class App extends Component {
     super(props)
 
     this.state = {
-      application: {productTypes: [
+      productTypes: [
         "loan",
         "savings"
       ],
-        personalInformation: {},
-        financialInformation: {}
-      },
+      personalInformation: {},
+      financialInformation: {}
     }
   }
 
-   passApplicationInfo = (applicationDetails) => {
+  passApplicationInfo = (applicationDetails) => {
     this.setState({
       personalInformation: applicationDetails.personalInformation,
       financialInformation: applicationDetails.financialInformation
-    })
+    }, () => this.fetchLeads())
+  }
 
-    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: applicationDetails})
+  fetchLeads = () => {
+    console.log("APPLICATION", JSON.stringify(this.state))
+    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: {...this.state}})
       .then(r => r.json())
       .then(j => {
+        console.log("FIRST REQUEST", j)
         const uuid = j.uuid
         httpRequest('http://localhost:3000/api/v1/ratetables', 'post', {uuid})
           .then(r => r.json())

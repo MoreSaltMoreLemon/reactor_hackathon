@@ -151,6 +151,7 @@ export default class LoanApplication extends Component {
       {/*financial info*/}
           <Fade up>
             <select
+              name='employmentStatus'
               onChange={this.changeFinancial}
               className= "application employed">
               <option value ='' selected disabled> Are you employed</option>
@@ -160,7 +161,7 @@ export default class LoanApplication extends Component {
           </Fade>
           <Fade up>
             <select
-              name="employmentFrequency" onChange={this.changeFinancial}
+              name="employmentPayFrequency" onChange={this.changeFinancial}
               className= "application paymentFrequency">
               <option value='' selected disabled> What is your payment frequency</option>
               <option value="weekly"> Weekly</option>
