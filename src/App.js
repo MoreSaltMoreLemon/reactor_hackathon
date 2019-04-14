@@ -56,12 +56,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="parallax-container">
-          <Parallax parallax={Mountain} />
-          <div className='content-container'>
+        <header className="AppHeader">
            {this.passLoanOffers()} 
-           </div>
-
         </header>
       </div>
     );
