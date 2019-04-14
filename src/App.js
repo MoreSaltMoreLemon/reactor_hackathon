@@ -29,12 +29,12 @@ class App extends Component {
 
   fetchLeads = () => {
     console.log("APPLICATION", JSON.stringify(this.state))
-    httpRequest('http://localhost:3000/api/v1/lead', 'post', {lead: {...this.state}})
+    httpRequest('http://10.104.148.49:3000/api/v1/lead', 'post', {lead: {...this.state}})
       .then(r => r.json())
       .then(j => {
         console.log("FIRST REQUEST", j)
         const uuid = j.uuid
-        httpRequest('http://localhost:3000/api/v1/ratetables', 'post', {uuid})
+        httpRequest('http://10.104.148.49:3000/api/v1/ratetables', 'post', {uuid})
           .then(r => r.json())
           .then(j => {
             console.log("RATETABLES:", JSON.stringify(j))
@@ -61,6 +61,7 @@ class App extends Component {
           <div className='content-container'>
            {this.passLoanOffers()} 
            </div>
+
         </header>
       </div>
     );
