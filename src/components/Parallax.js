@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Layer from './Layer'
 import '../styles/Parallax.css'
 
 export default class Parallax extends Component {
@@ -17,17 +18,12 @@ export default class Parallax extends Component {
 
   // }
 
-  // renderLayers() {
-  //   this.props.parallax.layers.map(layer => {
-  //     return  <div
-  //               style={
-  //                 {
-  //                   'background': `url(${layer.url})`
-  //                 }
-  //               }
-  //             ></div>
-  //   })
-  // }
+  renderLayers() {
+    this.props.parallax.layers.map(layer => {
+      const style = {'background': `url(${layer.url})`}
+      return  <Layer style={style} />
+    })
+  }
 
   render() {
     return (

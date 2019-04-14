@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../styles/LoanApplication.css';
 import Fade from 'react-reveal/Fade'
 import { Mountain } from '../data/parallaxes'
-import Parallax from './Parrallax'
+import Parallax from './Parallax'
 
 export default class LoanApplication extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class LoanApplication extends Component {
       "ssn": "111-22-3333"
     }
   }
-  
+
   changeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
