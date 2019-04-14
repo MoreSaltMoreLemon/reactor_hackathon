@@ -69,6 +69,7 @@ export default class LoanApplication extends Component {
 
     return (
         <div className="loan-application">
+          <h1> Check your offers </h1>
           <form
             onSubmit={this.submitPersonalHandler}>
             {/* <Fade up> */}
@@ -79,11 +80,11 @@ export default class LoanApplication extends Component {
                 required
                 name="firstName"
                 className="application firstName"
-                value={this.state.personalInformation.firstName}
+
                 onChange={this.changePersonal}
                 onKeyUp={(e)=> this.handleKeyUp(e, 'lastName')}>
               </input>
-            
+
           {/* <Fade up> */}
             <input
               type="text"
@@ -92,11 +93,10 @@ export default class LoanApplication extends Component {
               required
               className="application lastName"
               placeholder="Last Name"
-              value={this.state.personalInformation.lastName}
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'email')}>
             </input>
-          
+
           {/* <Fade up> */}
             <input
               type="text"
@@ -105,11 +105,10 @@ export default class LoanApplication extends Component {
               name="email"
               className="application email"
               placeholder="E-Mail"
-              value={this.state.personalInformation.email}
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'city')}>
             </input>
-          
+
 
           {/* <Fade up> */}
             <input
@@ -118,11 +117,10 @@ export default class LoanApplication extends Component {
               name="city"
               className="application city"
               placeholder="city"
-              value={this.state.personalInformation.city}
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'state')}>
             </input>
-          
+
           {/* <Fade up> */}
             <input
               type="text"
@@ -130,11 +128,10 @@ export default class LoanApplication extends Component {
               name="state"
               className="application state"
               placeholder="state"
-              value={this.state.personalInformation.state}
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'primaryPhone')}>
             </input>
-          
+
           {/* <Fade up> */}
             <input
               type="tel"
@@ -142,11 +139,10 @@ export default class LoanApplication extends Component {
               name="primaryPhone"
               className="application primaryPhone"
               placeholder="primaryPhone"
-              value={this.state.personalInformation.primaryPhone}
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'dateOfBirth')}>
             </input>
-          
+
           {/* <Fade up> */}
             <input
               type="date"
@@ -155,11 +151,10 @@ export default class LoanApplication extends Component {
               name="dateOfBirth"
               className="application dateOfBirth"
               placeholder="dateOfBirth"
-              value={this.state.personalInformation.dateOfBirth}
               onChange={this.changePersonal}
               onKeyUp={(e)=> this.handleKeyUp(e, 'employmentStatus')}>
             </input>
-          
+
 
         {/*financial info*/}
           {/* <Fade up> */}
@@ -169,12 +164,12 @@ export default class LoanApplication extends Component {
               onChange={this.changeFinancial}
               className= "application employed"
               onKeyUp={(e)=> this.handleKeyUp(e, 'employmentPayFrequency')}
-              value={this.state.financialInformation.employmentStatus}>
-              <option value ='' defaultValue disabled> Are you employed</option>
+              >
+              <option value ='Unemployed' selected disabled> Are you employed</option>
               <option value='employed'>Employed</option>
               <option value='unemployed'>Unemployed</option>
             </select>
-          
+
           {/* <Fade up> */}
             <select
               name="employmentPayFrequency"
@@ -182,14 +177,13 @@ export default class LoanApplication extends Component {
               onChange={this.changeFinancial}
               className= "application paymentFrequency"
               onKeyUp={(e)=> this.handleKeyUp(e, 'annualIncome')}
-              value={this.state.financialInformation.employmentPayFrequency}>
-              <option defaultValue
-                disabled> What is your payment frequency</option>
+            >
+              <option value ="weekly" selected disabled> What is your payment frequency</option>
               <option value="weekly"> Weekly</option>
               <option value="fortnightly"> Fortnightly</option>
               <option value="monthly"> Monthly</option>
             </select>
-          
+
           {/* <Fade up> */}
             <input
               type="text"
@@ -198,11 +192,10 @@ export default class LoanApplication extends Component {
               className="application annualIncome"
               placeholder="annualIncome"
               required
-              value={this.state.financialInformation.annualIncome}
               onKeyUp={(e)=> this.handleKeyUp(e, 'monthlyNetIncome')}
               onChange={this.changeFinancial}>
             </input>
-          
+
           {/* <Fade up> */}
             <input
               type="text"
@@ -211,11 +204,10 @@ export default class LoanApplication extends Component {
               className="application monthlyNetIncome"
               placeholder="monthlyNetIncome"
               required
-              value={this.state.financialInformation.monthlyNetIncome}
               onKeyUp={(e)=> this.handleKeyUp(e, 'submit')}
               onChange={this.changeFinancial}>
             </input>
-          
+
           <button
             type="submit"
             disabled
@@ -228,7 +220,7 @@ export default class LoanApplication extends Component {
               type="submit"
               value="Submit">
             </input>
-          
+
         </form>
       </div>
     )
